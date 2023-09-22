@@ -57,8 +57,12 @@
       <div class="py-2 flex w-full flex-row justify-center items-center h-full">
         <!-- Avatar -->
         <div class="flex flex-row w-full">
-          <div class="bg-white w-full h-full flex flex-row py-4 px-4 rounded-md">
-            <div class="flex w-full flex-row">
+          <div
+            class="bg-white w-full h-full flex laptop:flex-row phone:flex-col py-4 px-4 rounded-md"
+          >
+            <div
+              class="flex w-full flex-row phone:justify-center phone:items-center laptop:justify-normal"
+            >
               <div class="flex-row flex">
                 <div class="md:shrink-0 sm:shrink-0">
                   <router-link to="">
@@ -70,7 +74,7 @@
                   </router-link>
                 </div>
                 <!-- Profile Details -->
-                <div class="px-4 flex flex-col">
+                <div class="px-4 flex flex-col phone:justify-center">
                   <div class="flex flex-col">
                     <h3 class="font-medium text-2xl">John Doe</h3>
                     <div class="text-xs text-slate-500 font-medium mb-2">UI/UX Design Team</div>
@@ -81,7 +85,8 @@
                   <div class="mt-6">
                     <ButtonVue
                       label="Send Message"
-                      class="py-2 px-2 rounded-md text-white"
+                      class="py-2 px-2 rounded-md text-white whitespace-nowrap"
+                      size="large"
                       :pt="{
                         root: {
                           style: {
@@ -164,10 +169,10 @@
         </div>
       </div>
       <!-- Personal Information & Emergency Contact -->
-      <div class="flex py-4 w-full">
+      <div class="flex py-4 w-full laptop:flex-row phone:flex-col">
         <!-- Personal Information -->
-        <div class="basis-1/2 pr-2 w-full">
-          <div class="bg-white px-5 py-3 flex flex-row justify-between rounded-md">
+        <div class="basis-1/2 pr-2 phone:pr-0 w-full">
+          <div class="bg-white px-5 py-3 flex flex-row justify-between rounded-md phone:mb-3">
             <div class="flex flex-col w-full">
               <h3 class="font-bold text-lg mb-6">Personal Informations</h3>
               <ul class="h-[379px]">
@@ -237,7 +242,7 @@
           </div>
         </div>
         <!-- Emergency Contact -->
-        <div class="basis-1/2 pl-2">
+        <div class="basis-1/2 pl-2 phone:pl-0">
           <div class="bg-white px-5 py-3 rounded-md">
             <div class="flex flex-row justify-between">
               <div class="flex flex-col w-full">
@@ -310,9 +315,9 @@
         </div>
       </div>
       <!-- Bank Information & Family Informations -->
-      <div class="flex py-4 w-full">
+      <div class="flex w-full phone:flex-col phone:pr-0 laptop:flex-row">
         <!-- Bank Information -->
-        <div class="basis-1/2 pr-2">
+        <div class="basis-1/2 pr-2 phone:pr-0 phone:mb-3">
           <div class="bg-white px-5 py-3 rounded-md">
             <div class="flex flex-col">
               <h3 class="font-bold text-lg mb-6">Bank Information</h3>
@@ -346,13 +351,13 @@
           </div>
         </div>
         <!-- Family Informations -->
-        <div class="basis-1/2 pl-2 overflow-x-auto">
+        <div class="basis-1/2 pl-2 phone:pl-0 overflow-x-auto phone:mb-3">
           <div class="bg-white px-5 py-3 overflow-x-auto rounded-md">
             <div class="flex flex-col text-left">
               <h3 class="font-bold text-lg mb-2">Family Informations</h3>
               <!-- Primary Contact -->
               <DataTable
-                table-style="min-width: 25rem"
+                table-style="min-width: 28rem"
                 :value="family"
                 class="h-[166px] whitespace-nowrap"
                 editMode="row"
