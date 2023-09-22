@@ -1,14 +1,15 @@
 <template>
   <div class="w-full h-full font-Inter">
     <!-- main wrapper -->
-    <div class="h-full w-full py-8 px-8 bg-slate-300 box-border">
+    <div
+      class="h-full w-full py-8 px-8 bg-slate-300 box-border flex flex-col sm:flex sm:flex-col md:flex-col"
+    >
       <div class="flex w-full py-2">
-        <div class="bg-white w-full flex">
+        <div class="bg-white w-full flex rounded-md">
           <div class="w-full flex flex-row items-center basis-1/2 px-4 py-4">
             <Avatar
               icon="pi pi-user"
               class="mr-2 rounded-md"
-              size="large"
               :pt="{
                 root: {
                   style: {
@@ -18,13 +19,13 @@
                 }
               }"
             />
-            <h1 class="flex font-semibold text-lg">Employee Profile</h1>
+            <h1 class="flex font-semibold text-lg phone:text-base">Employee Profile</h1>
           </div>
           <div class="w-full px-4 py-4 flex items-center justify-end basis-1/2">
             <Breadcrumb
               :home="home"
               :model="items"
-              class="text-md"
+              class="text-md phone:text-xs"
               :pt="{
                 label: ({ props }) => ({
                   class:
@@ -53,113 +54,121 @@
         </div>
       </div>
       <!-- Profile Card -->
-      <div class="py-2 flex w-full">
+      <div class="py-2 flex w-full flex-row justify-center items-center h-full">
         <!-- Avatar -->
-        <div class="bg-white w-full h-full flex py-4 px-4">
-          <div class="flex w-full h-full">
-            <div>
+        <div class="flex flex-row w-full">
+          <div class="bg-white w-full h-full flex flex-row py-4 px-4 rounded-md">
+            <div class="flex w-full flex-row">
+              <div class="flex-row flex">
+                <div class="md:shrink-0 sm:shrink-0">
+                  <router-link to="">
+                    <img
+                      src="https://crms-html.dreamguystech.com/template/assets/img/profiles/avatar-02.jpg"
+                      alt="avatar"
+                      class="rounded-full h-[120px] w-[120px] align-middle md:shrink-0"
+                    />
+                  </router-link>
+                </div>
+                <!-- Profile Details -->
+                <div class="px-4 flex flex-col">
+                  <div class="flex flex-col">
+                    <h3 class="font-medium text-2xl">John Doe</h3>
+                    <div class="text-xs text-slate-500 font-medium mb-2">UI/UX Design Team</div>
+                    <div class="text-xs text-slate-500 font-medium">Web Designer</div>
+                    <div class="text-sm font-medium mt-2">Employee ID : FT-0001</div>
+                    <div class="text-[13.125px] text-slate-500">Date of Join : 1st Jan 2013</div>
+                  </div>
+                  <div class="mt-6">
+                    <ButtonVue
+                      label="Send Message"
+                      class="py-2 px-2 rounded-md text-white"
+                      :pt="{
+                        root: {
+                          style: {
+                            background: 'linear-gradient(to right, #9a55ff 0%, #fc6075 100%)'
+                          }
+                        }
+                      }"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-dashed flex flex-col mr-6 border-r-2 phone:flex-row phone:border-b-2 phone:my-3 border-b-slate-400"
+            ></div>
+            <div class="px-4 h-full flex w-full">
+              <ul class="w-full">
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Phone:</div>
+                    <div class="text-[15px] text-blue-500 hover:text-blue-800">
+                      <router-link to=""> 9876543210 </router-link>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Email:</div>
+                    <div class="text-[15px] text-blue-500 hover:text-blue-800">
+                      <router-link to=""> johndoe@example.com </router-link>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Birthday:</div>
+                    <div class="text-[15px] text-slate-500">24th July</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Address:</div>
+                    <div class="text-slate-500 text-[15px] block">
+                      1861 Bayonne Ave, Manchester Township, NJ, 08759
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Gender:</div>
+                    <div class="text-slate-500 text-[15px]">Male</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex mb-2">
+                    <div class="mr-8 w-1/5">Reports to:</div>
+                    <div class="flex items-center">
+                      <Avatar
+                        image="https://crms-html.dreamguystech.com/template/assets/img/profiles/avatar-16.jpg"
+                        shape="circle"
+                      />
+                      <router-link to="" class="text-[15px] text-blue-500 hover:text-blue-800 pl-2">
+                        Jeffery Lalor
+                      </router-link>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="h-fit">
               <router-link to="">
-                <img
-                  src="https://crms-html.dreamguystech.com/template/assets/img/profiles/avatar-02.jpg"
-                  alt="avatar"
-                  class="rounded-full h-[120px] w-[120px] align-middle"
-                />
+                <div
+                  class="rounded-full bg-slate-200 hover:bg-purple-500 text-gray-500 hover:text-white w-[30px] h-[30px] flex items-center justify-center"
+                >
+                  <i class="font- pi pi-pencil text-[12px]"> </i>
+                </div>
               </router-link>
             </div>
-            <!-- Profile Details -->
-            <div class="px-4 flex flex-col">
-              <div class="flex flex-col">
-                <h3 class="font-medium text-2xl">John Doe</h3>
-                <div class="text-xs text-slate-500 font-medium mb-2">UI/UX Design Team</div>
-                <div class="text-xs text-slate-500 font-medium">Web Designer</div>
-                <div class="text-sm font-medium mt-2">Employee ID : FT-0001</div>
-                <div class="text-[13.125px] text-slate-500">Date of Join : 1st Jan 2013</div>
-              </div>
-              <div class="mt-6">
-                <ButtonVue
-                  label="Send Message"
-                  class="py-2 px-2 rounded-md text-white"
-                  :pt="{
-                    root: {
-                      style: { background: 'linear-gradient(to right, #9a55ff 0%, #fc6075 100%)' }
-                    }
-                  }"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="border-dashed flex flex-col mr-6 border-r-2 border-b-slate-400"></div>
-          <div class="px-4 h-full flex w-full">
-            <ul class="w-full">
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Phone:</div>
-                  <div class="text-[15px] text-blue-500 hover:text-blue-800">
-                    <router-link to=""> 9876543210 </router-link>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Email:</div>
-                  <div class="text-[15px] text-blue-500 hover:text-blue-800">
-                    <router-link to=""> johndoe@example.com </router-link>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Birthday:</div>
-                  <div class="text-[15px] text-slate-500">24th July</div>
-                </div>
-              </li>
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Address:</div>
-                  <div class="text-slate-500 text-[15px]">
-                    1861 Bayonne Ave, Manchester Township, NJ, 08759
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Gender:</div>
-                  <div class="text-slate-500 text-[15px]">Male</div>
-                </div>
-              </li>
-              <li>
-                <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Reports to:</div>
-                  <div class="flex items-center">
-                    <Avatar
-                      image="https://crms-html.dreamguystech.com/template/assets/img/profiles/avatar-16.jpg"
-                      shape="circle"
-                    />
-                    <router-link to="" class="text-[15px] text-blue-500 hover:text-blue-800 pl-2">
-                      Jeffery Lalor
-                    </router-link>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="h-fit">
-            <router-link to="">
-              <div
-                class="rounded-full bg-slate-200 hover:bg-purple-500 text-gray-500 hover:text-white w-[30px] h-[30px] flex items-center justify-center"
-              >
-                <i class="font- pi pi-pencil text-[12px]"> </i>
-              </div>
-            </router-link>
           </div>
         </div>
       </div>
       <!-- Personal Information & Emergency Contact -->
       <div class="flex py-4 w-full">
         <!-- Personal Information -->
-        <div class="basis-1/2 pr-2">
-          <div class="bg-white px-5 py-3 flex flex-row justify-between">
-            <div class="flex flex-col">
+        <div class="basis-1/2 pr-2 w-full">
+          <div class="bg-white px-5 py-3 flex flex-row justify-between rounded-md">
+            <div class="flex flex-col w-full">
               <h3 class="font-bold text-lg mb-6">Personal Informations</h3>
               <ul class="h-[379px]">
                 <li>
@@ -229,7 +238,7 @@
         </div>
         <!-- Emergency Contact -->
         <div class="basis-1/2 pl-2">
-          <div class="bg-white px-5 py-3">
+          <div class="bg-white px-5 py-3 rounded-md">
             <div class="flex flex-row justify-between">
               <div class="flex flex-col w-full">
                 <h3 class="font-bold text-lg mb-2">Emergency Contact</h3>
@@ -304,7 +313,7 @@
       <div class="flex py-4 w-full">
         <!-- Bank Information -->
         <div class="basis-1/2 pr-2">
-          <div class="bg-white px-5 py-3">
+          <div class="bg-white px-5 py-3 rounded-md">
             <div class="flex flex-col">
               <h3 class="font-bold text-lg mb-6">Bank Information</h3>
               <ul class="h-[150px]">
@@ -338,7 +347,7 @@
         </div>
         <!-- Family Informations -->
         <div class="basis-1/2 pl-2 overflow-x-auto">
-          <div class="bg-white px-5 py-3 overflow-x-auto">
+          <div class="bg-white px-5 py-3 overflow-x-auto rounded-md">
             <div class="flex flex-col text-left">
               <h3 class="font-bold text-lg mb-2">Family Informations</h3>
               <!-- Primary Contact -->
