@@ -115,7 +115,7 @@
               </li>
               <li>
                 <div class="flex mb-2">
-                  <div class="mr-10 w-1/5">Address:</div>
+                  <div class="mr-8 w-1/5">Address:</div>
                   <div class="text-slate-500 text-[15px]">
                     1861 Bayonne Ave, Manchester Township, NJ, 08759
                   </div>
@@ -143,16 +143,25 @@
               </li>
             </ul>
           </div>
+          <div class="h-fit">
+            <router-link to="">
+              <div
+                class="rounded-full bg-slate-200 hover:bg-purple-500 text-gray-500 hover:text-white w-[30px] h-[30px] flex items-center justify-center"
+              >
+                <i class="font- pi pi-pencil text-[12px]"> </i>
+              </div>
+            </router-link>
+          </div>
         </div>
       </div>
       <!-- Personal Information & Emergency Contact -->
       <div class="flex py-4 w-full">
         <!-- Personal Information -->
         <div class="basis-1/2 pr-2">
-          <div class="bg-white px-5 py-3">
+          <div class="bg-white px-5 py-3 flex flex-row justify-between">
             <div class="flex flex-col">
               <h3 class="font-bold text-lg mb-6">Personal Informations</h3>
-              <ul class="h-[356px]">
+              <ul class="h-[379px]">
                 <li>
                   <div class="flex mb-3">
                     <div class="w-full mr-5">Passport No.</div>
@@ -207,66 +216,86 @@
                 </li>
               </ul>
             </div>
+            <div class="h-fit">
+              <router-link to="">
+                <div
+                  class="rounded-full bg-slate-200 hover:bg-purple-500 text-gray-500 hover:text-white w-[30px] h-[30px] flex items-center justify-center"
+                >
+                  <i class="font- pi pi-pencil text-[12px]"> </i>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
         <!-- Emergency Contact -->
         <div class="basis-1/2 pl-2">
           <div class="bg-white px-5 py-3">
-            <div class="flex flex-col">
-              <h3 class="font-bold text-lg mb-2">Emergency Contact</h3>
-              <!-- Primary Contact -->
-              <h5 class="my-3 font-medium">Primary</h5>
-              <ul class="h-[150px]">
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Name</div>
-                    <div class="w-full text-slate-500 text-[15px]">John Doe</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Relationship</div>
-                    <div class="w-full text-slate-500 text-[15px]">Father</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Phone</div>
-                    <div class="w-full text-slate-500 text-[15px]">
-                      <text> 9876543210, 9876543210 </text>
+            <div class="flex flex-row justify-between">
+              <div class="flex flex-col w-full">
+                <h3 class="font-bold text-lg mb-2">Emergency Contact</h3>
+                <!-- Primary Contact -->
+                <h5 class="my-3 font-medium">Primary</h5>
+                <ul class="h-[160px]">
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Name</div>
+                      <div class="w-full text-slate-500 text-[15px]">John Doe</div>
                     </div>
+                  </li>
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Relationship</div>
+                      <div class="w-full text-slate-500 text-[15px]">Father</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Phone</div>
+                      <div class="w-full text-slate-500 text-[15px]">
+                        <text> 9876543210, 9876543210 </text>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex mb-2">
+                      <div class="w-full mr-5">Nationality</div>
+                      <div class="w-full text-slate-500 text-[15px]">Nigerian</div>
+                    </div>
+                  </li>
+                </ul>
+                <hr class="border-[1.5px] my-1" />
+                <!-- Secondary Contact -->
+                <h5 class="my-4 font-medium">Secondary</h5>
+                <ul class="h-[120px]">
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Name</div>
+                      <div class="w-full text-slate-500 text-[15px]">Karen Willis</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Relationship</div>
+                      <div class="w-full text-slate-500 text-[15px]">Brother</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex mb-3">
+                      <div class="w-full mr-5">Phone</div>
+                      <div class="w-full text-slate-500 text-[15px]">9876543210, 9876543210</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="h-fit">
+                <router-link to="">
+                  <div
+                    class="rounded-full bg-slate-200 hover:bg-purple-500 text-gray-500 hover:text-white w-[30px] h-[30px] flex items-center justify-center"
+                  >
+                    <i class="font- pi pi-pencil text-[12px]"> </i>
                   </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Nationality</div>
-                    <div class="w-full text-slate-500 text-[15px]">Nigerian</div>
-                  </div>
-                </li>
-              </ul>
-              <hr class="border-[1.5px] my-3" />
-              <!-- Secondary Contact -->
-              <h5 class="my-3 font-medium">Secondary</h5>
-              <ul class="h-[100px]">
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Name</div>
-                    <div class="w-full text-slate-500 text-[15px]">Karen Willis</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Relationship</div>
-                    <div class="w-full text-slate-500 text-[15px]">Brother</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Phone</div>
-                    <div class="w-full text-slate-500 text-[15px]">9876543210, 9876543210</div>
-                  </div>
-                </li>
-              </ul>
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
