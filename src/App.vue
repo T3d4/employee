@@ -115,7 +115,7 @@
               </li>
               <li>
                 <div class="flex mb-2">
-                  <div class="mr-8 w-1/5">Address:</div>
+                  <div class="mr-10 w-1/5">Address:</div>
                   <div class="text-slate-500 text-[15px]">
                     1861 Bayonne Ave, Manchester Township, NJ, 08759
                   </div>
@@ -273,126 +273,140 @@
       </div>
       <!-- Bank Information & Family Informations -->
       <div class="flex py-4 w-full">
-        <!-- Personal Information -->
+        <!-- Bank Information -->
         <div class="basis-1/2 pr-2">
           <div class="bg-white px-5 py-3">
             <div class="flex flex-col">
-              <h3 class="font-bold text-lg mb-6">Personal Informations</h3>
-              <ul class="h-[356px]">
+              <h3 class="font-bold text-lg mb-6">Bank Information</h3>
+              <ul class="h-[150px]">
                 <li>
                   <div class="flex mb-3">
-                    <div class="w-full mr-5">Passport No.</div>
-                    <div class="w-full text-slate-500 text-[15px]">9876543210</div>
+                    <div class="w-full mr-5">Bank Name</div>
+                    <div class="w-full text-slate-500 text-[15px]">ICICI Bank</div>
                   </div>
                 </li>
                 <li>
                   <div class="flex mb-3">
-                    <div class="w-full mr-5">Passport Exp Date.</div>
-                    <div class="w-full text-slate-500 text-[15px]">9876543210</div>
+                    <div class="w-full mr-5">Bank account No.</div>
+                    <div class="w-full text-slate-500 text-[15px]">159843014641</div>
                   </div>
                 </li>
                 <li>
                   <div class="flex mb-3">
-                    <div class="w-full mr-5">Tel</div>
-                    <div class="w-full text-slate-500 text-[15px]">
-                      <router-link to="" class="text-blue-500 hover:text-blue-800">
-                        9876543210
-                      </router-link>
-                    </div>
+                    <div class="w-full mr-5">IFSC Code</div>
+                    <div class="w-full text-slate-500 text-[15px]">ICI24504</div>
                   </div>
                 </li>
                 <li>
                   <div class="flex mb-3">
-                    <div class="w-full mr-5">Nationality</div>
-                    <div class="w-full text-slate-500 text-[15px]">Nigerian</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Religion</div>
-                    <div class="w-full text-slate-500 text-[15px]">Christian</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Marital Status</div>
-                    <div class="w-full text-slate-500 text-[15px]">Married</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Employment of spouse</div>
-                    <div class="w-full text-slate-500 text-[15px]">No</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">No. of children</div>
-                    <div class="w-full text-slate-500 text-[15px]">2</div>
+                    <div class="w-full mr-5">PAN No</div>
+                    <div class="w-full text-slate-500 text-[15px]">TC000Y56</div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- Emergency Contact -->
-        <div class="basis-1/2 pl-2">
-          <div class="bg-white px-5 py-3">
-            <div class="flex flex-col">
-              <h3 class="font-bold text-lg mb-2">Emergency Contact</h3>
+        <!-- Family Informations -->
+        <div class="basis-1/2 pl-2 overflow-x-auto">
+          <div class="bg-white px-5 py-3 overflow-x-auto">
+            <div class="flex flex-col text-left">
+              <h3 class="font-bold text-lg mb-2">Family Informations</h3>
               <!-- Primary Contact -->
-              <h5 class="my-3 font-medium">Primary</h5>
-              <ul class="h-[150px]">
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Name</div>
-                    <div class="w-full text-slate-500 text-[15px]">John Doe</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Relationship</div>
-                    <div class="w-full text-slate-500 text-[15px]">Father</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Phone</div>
-                    <div class="w-full text-slate-500 text-[15px]">
-                      <text> 9876543210, 9876543210 </text>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Nationality</div>
-                    <div class="w-full text-slate-500 text-[15px]">Nigerian</div>
-                  </div>
-                </li>
-              </ul>
-              <hr class="border-[1.5px] my-3" />
-              <!-- Secondary Contact -->
-              <h5 class="my-3 font-medium">Secondary</h5>
-              <ul class="h-[100px]">
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Name</div>
-                    <div class="w-full text-slate-500 text-[15px]">Karen Willis</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Relationship</div>
-                    <div class="w-full text-slate-500 text-[15px]">Brother</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex mb-3">
-                    <div class="w-full mr-5">Phone</div>
-                    <div class="w-full text-slate-500 text-[15px]">9876543210, 9876543210</div>
-                  </div>
-                </li>
-              </ul>
+              <DataTable
+                table-style="min-width: 25rem"
+                :value="family"
+                class="h-[166px] whitespace-nowrap"
+                editMode="row"
+                v-model:editingRows="editingRows"
+                @row-edit-save="onRowEditSave"
+                tableClass="editable-cells-table"
+                dataKey="id"
+              >
+                <Column
+                  header="Name"
+                  field="name"
+                  :pt="{
+                    headerCell: {
+                      style: {
+                        color: '#8c8989',
+                        'padding-top': '5px',
+                        'padding-bottom': '5px',
+                        'font-weight': 500
+                      }
+                    }
+                  }"
+                  style="width: 20%"
+                >
+                  <template #editor="{ data, field }">
+                    <InputText v-model="data[field]" />
+                  </template>
+                </Column>
+                <Column
+                  field="relationship"
+                  header="Relationship"
+                  :pt="{
+                    headerCell: {
+                      style: {
+                        color: '#8c8989',
+                        'padding-top': '5px',
+                        'padding-bottom': '5px',
+                        'padding-right': '8px',
+                        'font-weight': 500
+                      }
+                    }
+                  }"
+                  style="width: 20%"
+                >
+                  <template #editor="{ data, field }">
+                    <InputText v-model="data[field]" />
+                  </template>
+                </Column>
+                <Column
+                  field="dob"
+                  header="Date of Birth"
+                  :pt="{
+                    headerCell: {
+                      style: {
+                        color: '#8c8989',
+                        'padding-top': '4px',
+                        'padding-bottom': '4px',
+                        'font-weight': 500
+                      }
+                    }
+                  }"
+                  style="width: 20%"
+                >
+                  <template #editor="{ data, field }">
+                    <InputText v-model="data[field]" />
+                  </template>
+                </Column>
+
+                <Column
+                  field="contact"
+                  header="Phone"
+                  :pt="{
+                    headerCell: {
+                      style: {
+                        color: '#8c8989',
+                        'padding-top': '5px',
+                        'padding-bottom': '5px',
+                        'font-weight': 500
+                      }
+                    }
+                  }"
+                  style="width: 20%"
+                >
+                  <template #editor="{ data, field }">
+                    <InputText v-model="data[field]" />
+                  </template>
+                </Column>
+                <Column
+                  :rowEditor="true"
+                  class="text-center justify-between"
+                  style="width: 10%"
+                ></Column>
+              </DataTable>
             </div>
           </div>
         </div>
@@ -404,8 +418,36 @@
 import { ref } from 'vue'
 
 const home = ref({ label: 'Dashboard', route: '/' })
-
 const items = ref([{ label: 'Employee Profile' }])
+const editingRows = ref([])
+
+const family = ref([
+  {
+    id: 0,
+    name: 'Richard',
+    relationship: 'Brother',
+    contact: '+1-202-555-0875',
+    dob: 'Feb 16th, 2017 '
+  },
+  {
+    id: 1,
+    name: 'William',
+    relationship: 'Uncle',
+    contact: '+1-232-655-7875',
+    dob: 'Sep 22nd, 2003'
+  }
+])
+
+const onRowEditSave = (event) => {
+  let { newData, index } = event
+
+  family.value[index] = newData
+}
 </script>
 
-<style scoped></style>
+<style>
+td {
+  padding-bottom: 5px;
+  padding-right: 8px;
+}
+</style>
